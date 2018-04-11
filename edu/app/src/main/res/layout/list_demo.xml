@@ -1,0 +1,78 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="75dp"
+    android:background="#ffffff"
+    >
+<LinearLayout
+    android:layout_width="match_parent"
+    android:layout_height="75dp"
+    android:background="?android:attr/selectableItemBackground"
+    android:orientation="horizontal"
+    android:weightSum="1">
+<com.example.edu.utils.XCRoundImageView
+    android:layout_marginLeft="3dp"
+    android:layout_gravity="center_vertical"
+    android:src="@mipmap/head1"
+    android:id="@+id/listtouxiang"
+    android:layout_width="55dp"
+    android:layout_height="55dp" />
+
+    <LinearLayout
+        android:layout_width="0dp"
+        android:layout_height="75dp"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="5dp"
+        android:layout_weight="0.3"
+        android:orientation="vertical">
+
+        <TextView
+            android:gravity="center_vertical"
+            android:id="@+id/demo_name"
+            android:layout_width="match_parent"
+            android:layout_height="22dp"
+            android:text="王扶摇"
+            android:textColor="#131111"
+            android:textSize="15dp" />
+
+        <TextView
+            android:id="@+id/demo_number"
+            android:layout_width="match_parent"
+            android:layout_height="17dp"
+            android:text="1511651117"
+            android:textColor="#131111"
+            android:textSize="12dp" />
+
+        <TextView
+            android:id="@+id/demo_class"
+            android:layout_width="match_parent"
+            android:layout_height="17dp"
+            android:text="软件1507        "
+            android:textColor="#131111"
+            android:textSize="12dp" />
+
+        <TextView
+            android:id="@+id/demo_time"
+            android:layout_width="match_parent"
+            android:layout_height="17dp"
+            android:text="2017 年 3 月 18 日"
+            android:textColor="#bdbbbb"
+            android:textSize="12dp" />
+
+
+    </LinearLayout>
+
+    <TextView
+        android:id="@+id/demo_event"
+        android:layout_width="0dp"
+        android:layout_height="match_parent"
+        android:layout_marginRight="10dp"
+
+        android:layout_weight="0.72"
+        android:text=""
+        android:textColor="#131111" />
+
+</LinearLayout>
+
+</LinearLayout>

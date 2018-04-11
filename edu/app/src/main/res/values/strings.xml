@@ -1,0 +1,15 @@
+<resources>
+    <string name="app_name">教务巡查</string>
+    <string name="title_activity_main">MainActivity</string>
+    <string name="title_home">Home</string>
+    <string name="title_dashboard">Dashboard</string>
+    <string name="title_notifications">Notifications</string>
+    <string name="login_button">登录</string>
+    <string name="qqlog">QQ登录</string>
+
+    <item type="id" name="tag_M">
+    </item>
+    <item type="id" name="tag_D">
+    </item>
+
+</resources>

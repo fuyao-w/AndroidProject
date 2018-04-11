@@ -1,0 +1,231 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:background="#ffffff"
+
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    >
+<FrameLayout
+    android:background="#1296db"
+    android:id="@+id/haead"
+    android:layout_width="match_parent"
+    android:layout_height="150dp"
+    >
+    <RelativeLayout
+
+        android:clickable="true"
+        android:layout_width="match_parent"
+        android:layout_height="150dp"
+        android:background="?android:attr/selectableItemBackground">
+
+        <com.example.edu.utils.XCRoundImageView
+            android:saveEnabled="true"
+            android:layout_marginTop="20dp"
+            android:layout_centerHorizontal="true"
+           android:clickable="true"
+            android:layout_width="60dp"
+            android:layout_height="60dp"
+            android:id="@+id/myhead"
+            android:src="@mipmap/icon_logo"
+            />
+
+    </RelativeLayout>
+</FrameLayout>
+    <View
+        android:id="@+id/line1"
+        android:layout_width="fill_parent"
+        android:layout_height="1px"
+        android:layout_marginRight="5dp"
+        android:layout_marginLeft="5dp"
+        android:background="#ddd"
+        android:layout_below="@+id/haead" />
+    <RelativeLayout
+android:clickable="true"
+        android:layout_below="@+id/line1"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:id="@+id/name"
+        android:background="?android:attr/selectableItemBackground"
+        >
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@mipmap/namepcen"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="10dp"
+            android:id="@+id/imageView2" />
+        <TextView
+            android:id="@+id/nickname"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:text="无"
+            android:textSize="15dp"
+            android:layout_marginRight="5dp"
+            android:layout_toLeftOf="@+id/re1"
+            />
+        <ImageView
+            android:id="@+id/re1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@mipmap/revise"
+            android:layout_marginRight="5dp"
+            android:layout_alignTop="@+id/nickname"
+            android:layout_alignParentEnd="true" />
+
+    </RelativeLayout>
+    <View
+        android:id="@+id/line2"
+        android:layout_width="fill_parent"
+        android:layout_height="1px"
+        android:layout_marginRight="5dp"
+        android:layout_marginLeft="5dp"
+        android:background="#ddd"
+        android:layout_below="@+id/name" />
+    <RelativeLayout
+
+        android:layout_below="@+id/line2"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:id="@+id/sex"
+        android:clickable="true"
+        android:background="?android:attr/selectableItemBackground">
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@mipmap/granderpcen"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="10dp"/>
+        <TextView
+            android:id="@+id/usergender"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:text=""
+
+            android:layout_toLeftOf="@+id/re"
+            android:layout_marginRight="10dp"
+            />
+        <ImageView
+            android:id="@+id/re"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@mipmap/revise"
+            android:layout_marginRight="5dp"
+            android:layout_alignTop="@+id/usergender"
+            android:layout_alignParentEnd="true" />
+
+
+    </RelativeLayout>
+    <View
+        android:id="@+id/line3"
+        android:layout_width="fill_parent"
+        android:layout_height="1px"
+        android:layout_marginRight="5dp"
+        android:layout_marginLeft="5dp"
+        android:background="#ddd"
+        android:layout_below="@+id/sex" />
+    <RelativeLayout
+        android:layout_below="@+id/line3"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:id="@+id/province"
+        android:clickable="true"
+        android:background="?android:attr/selectableItemBackground">
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@mipmap/localpcen"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="10dp"
+            android:id="@+id/imageView" />
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="无"
+            android:id="@+id/userlocal"
+            android:layout_marginRight="10dp"
+            android:layout_centerVertical="true"
+            android:layout_toStartOf="@+id/re" />
+        <ImageView
+            android:id="@+id/re"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@mipmap/revise"
+            android:layout_marginRight="5dp"
+
+            android:layout_alignBottom="@+id/userlocal"
+            android:layout_alignParentEnd="true" />
+    </RelativeLayout>
+    <View
+        android:id="@+id/line4"
+        android:layout_width="fill_parent"
+        android:layout_height="15px"
+
+        android:background="#ddd"
+        android:layout_below="@+id/province" />
+    <RelativeLayout
+        android:layout_below="@+id/line4"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:id="@+id/cen_num">
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@mipmap/cen_number"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="10dp"/>
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+           android:text=""
+            android:id="@+id/usernumber"
+            android:layout_alignParentRight="true"
+            android:layout_marginRight="10dp"
+            />
+    </RelativeLayout>
+    <View
+        android:id="@+id/line5"
+        android:layout_width="fill_parent"
+        android:layout_height="1px"
+        android:layout_marginRight="5dp"
+        android:layout_marginLeft="5dp"
+        android:background="#ddd"
+        android:layout_below="@+id/cen_num" />
+    <RelativeLayout
+        android:layout_below="@+id/line5"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:id="@+id/cen_class">
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@mipmap/cen_class"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="10dp"/>
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:text=""
+            android:id="@+id/user_class"
+            android:layout_alignParentRight="true"
+            android:layout_marginRight="10dp"
+            />
+    </RelativeLayout>
+    <View
+        android:id="@+id/line6"
+        android:layout_width="fill_parent"
+        android:layout_height="1px"
+        android:layout_marginRight="5dp"
+        android:layout_marginLeft="5dp"
+        android:background="#ddd"
+        android:layout_below="@+id/cen_class" />
+
+
+</RelativeLayout>
+

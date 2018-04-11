@@ -1,0 +1,217 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout
+
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    xmlns:android="http://schemas.android.com/apk/res/android">
+
+        <TextView
+
+        android:clickable="true"
+        android:id="@+id/waittext"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="正在登陆"
+        android:textSize="20dp"
+        android:layout_gravity="center_horizontal|center_vertical"
+        android:layout_marginTop="35dp"
+        android:layout_alignStart="@+id/logo"
+        android:visibility="invisible"/>
+
+    <ProgressBar
+        android:id="@+id/progressBar"
+        style="?android:attr/progressBarStyle"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+     android:layout_gravity="center_horizontal|center_vertical"
+        android:visibility="invisible" />
+
+        <RelativeLayout
+            android:id="@+id/parentLayout"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical"
+
+            >
+
+            <com.example.edu.utils.XCRoundImageView
+                android:id="@+id/logo"
+                android:layout_width="80dp"
+                android:layout_height="80dp"
+                android:layout_centerHorizontal="true"
+                android:layout_marginTop="40dp"
+                android:src="@mipmap/icon_logo" />
+
+            <LinearLayout
+                android:id="@+id/user"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/logo"
+                android:layout_marginLeft="10dp"
+                android:layout_marginRight="10dp"
+                android:layout_marginTop="20dp"
+                android:background="@drawable/logbck"
+                android:gravity="center_horizontal|center_vertical"
+                android:orientation="horizontal">
+
+                <ImageView
+                    android:layout_width="40dp"
+                    android:layout_height="40dp"
+                    android:src="@mipmap/people"
+
+                    />
+
+                <EditText
+
+                    android:id="@+id/userText"
+                    android:layout_width="300dp"
+                    android:layout_height="wrap_content"
+                    android:background="@null"
+                    android:digits="0123456789qwertyuioplkjhgfdsazxcvbnm"
+                    android:hint="请输入用户名"
+                    android:maxLength="10" />
+                <!--<ImageButton-->
+                    <!--android:id="@+id/clearname"-->
+                    <!--android:layout_width="wrap_content"-->
+                    <!--android:layout_height="match_parent"-->
+                    <!--android:src="@mipmap/cleantext"-->
+                    <!--android:layout_marginRight="2dp"/>-->
+                <ImageView
+                    android:visibility="invisible"
+                    android:id="@+id/clearname"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:clickable="true"
+                    android:saveEnabled="true"
+                    android:src="@drawable/clear" />
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/password"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/user"
+                android:layout_marginLeft="10dp"
+                android:layout_marginRight="10dp"
+                android:layout_marginTop="5dp"
+                android:background="@drawable/logbck"
+                android:gravity="center_horizontal|center_vertical"
+                android:orientation="horizontal">
+
+                <ImageView
+                    android:layout_width="40dp"
+                    android:layout_height="40dp"
+                    android:src="@mipmap/unlock"
+
+                    />
+
+                <EditText
+                    android:id="@+id/passwordText"
+                    android:layout_width="300dp"
+                    android:layout_height="wrap_content"
+                    android:background="@null"
+                    android:digits="0123456789qwertyuioplkjhgfdsazxcvbnm"
+                    android:hint="请输入密码"
+                    android:inputType="textPassword"
+                    android:maxLength="16" />
+                <!--<ImageButton-->
+                    <!--android:id="@+id/clearpassword"-->
+                    <!--android:layout_width="wrap_content"-->
+                    <!--android:layout_height="match_parent"-->
+                    <!--android:src="@mipmap/cleantext"-->
+                    <!--android:layout_marginRight="2dp"/>-->
+
+                <ImageView
+                    android:visibility="invisible"
+                    android:id="@+id/clearpassword"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:clickable="true"
+                    android:src="@drawable/clear" />
+            </LinearLayout>
+
+            <Button
+
+                android:id="@+id/logButton"
+                android:layout_width="match_parent"
+                android:layout_height="40dp"
+                android:layout_below="@+id/password"
+                android:layout_marginLeft="20dp"
+                android:layout_marginRight="20dp"
+                android:layout_marginTop="45dp"
+                android:background="@drawable/logbut"
+                android:text="@string/login_button"
+                android:textColor="#ffffff"
+                android:textSize="20dp" />
+
+            <LinearLayout
+
+                android:id="@+id/linearLayout"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignRight="@id/logButton"
+                android:layout_below="@id/password"
+                android:layout_marginTop="10dp"
+                android:orientation="horizontal">
+
+                <CheckBox
+                    android:id="@+id/autologin"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_toLeftOf="@+id/remtext" />
+
+                <TextView
+                    android:id="@+id/remtext"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="自动登录" />
+
+                <CheckBox
+                    android:id="@+id/remember"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_toLeftOf="@+id/remtext" />
+
+                <TextView
+                    android:id="@+id/remtext"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="记住密码" />
+            </LinearLayout>
+
+            <ImageView
+                android:id="@+id/qqlog"
+                android:layout_width="50dp"
+                android:layout_height="50dp"
+                android:layout_alignParentBottom="true"
+                android:layout_centerHorizontal="true"
+                android:layout_marginBottom="53dp"
+                android:onClick="true"
+                android:src="@drawable/qq_login" />
+
+            <TextView
+
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/qqlog"
+                android:layout_alignParentBottom="true"
+                android:layout_centerHorizontal="true"
+                android:layout_marginBottom="30dp"
+                android:id="@+id/textView" />
+
+            <!--<TextView-->
+                <!--android:id="@+id/register"-->
+                <!--android:layout_width="wrap_content"-->
+                <!--android:layout_height="wrap_content"-->
+                <!--android:layout_alignEnd="@+id/logButton"-->
+                <!--android:layout_below="@+id/logButton"-->
+                <!--android:layout_marginTop="10dp"-->
+                <!--android:text="新用户注册" />-->
+
+
+        </RelativeLayout>
+    </FrameLayout>
+
+

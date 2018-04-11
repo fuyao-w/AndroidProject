@@ -1,0 +1,176 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/regesterlayout"
+
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+<TableLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/tablelayout"
+   android:layout_marginRight="5dp"
+    android:layout_marginLeft="5dp"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    >
+
+
+    <TableRow
+        android:layout_width="match_parent"
+        android:layout_height="30dp"
+        android:background="@drawable/logbck"
+      >
+
+        <TextView
+
+            android:layout_marginLeft="5dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="账 号:"
+            android:textSize="20dp" />
+
+        <EditText
+            android:text=""
+
+            android:id="@+id/regusername"
+            android:layout_width="320dp"
+            android:layout_height="wrap_content"
+            android:background="@null"
+            android:digits="0123456789qwertyuioplkjhgfdsazxcvbnm"
+            android:hint="请输入账号（最长10位）"
+            android:maxLength="10"
+            android:textSize="20dp" />
+    </TableRow>
+
+    <TableRow
+        android:background="@drawable/logbck"
+        android:layout_marginTop="10dp"
+
+        android:layout_height="30dp"
+        android:layout_width="match_parent">
+        <TextView
+
+            android:layout_marginLeft="5dp"
+            android:textSize="20dp"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:text="密 码:"/>
+
+        <EditText
+            android:id="@+id/regpassword"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@null"
+            android:digits="0123456789qwertyuioplkjhgfdsazxcvbnm"
+            android:hint="请输入密码（最长16位）"
+            android:inputType="textPassword"
+            android:maxLength="16"
+            android:text=""
+            android:textSize="20dp" />
+    </TableRow>
+
+    <TableRow
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginTop="10dp"
+        android:background="@drawable/logbck"
+      >
+
+        <TextView
+
+            android:layout_marginLeft="5dp"
+
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:text="密 码:"
+            android:textSize="20dp" />
+
+        <EditText
+            android:id="@+id/regpassword2"
+            android:text=""
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:background="@null"
+            android:digits="0123456789qwertyuioplkjhgfdsazxcvbnm"
+            android:hint="请重复输入密码"
+            android:inputType="textPassword"
+            android:maxLength="16"
+            android:textSize="20dp" />
+    </TableRow>
+    <TableRow
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginTop="10dp"
+        android:background="@drawable/logbck"
+        >
+
+        <TextView
+
+            android:layout_marginLeft="5dp"
+
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:text="姓 名:"
+            android:textSize="20dp" />
+
+        <EditText
+            android:id="@+id/regname"
+            android:background="@drawable/logbck"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:textSize="20dp"
+            android:maxLength="5"
+            />
+    </TableRow>
+    <TableRow
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginTop="10dp"
+        android:background="@drawable/logbck"
+        >
+
+        <TextView
+
+            android:layout_marginLeft="5dp"
+            android:textSize="20dp"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:text="号 码:"
+             />
+
+        <EditText
+            android:id="@+id/regnumber"
+            android:maxLength="11"
+            android:background="@drawable/logbck"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="学号或工号"
+            android:textSize="20dp"/>
+    </TableRow>
+
+</TableLayout>
+
+
+    <RadioGroup
+        android:layout_centerHorizontal="true"
+        android:layout_below="@id/tablelayout"
+        android:orientation="horizontal"
+        android:id="@+id/radiogroup"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content">
+        <RadioButton
+            android:id="@+id/sturole"
+            android:text="学生"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textColor="#1296db"
+            android:background="@null"/>
+        <RadioButton
+            android:id="@+id/tearole"
+            android:text="教师"
+            android:textColor="#1296db"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+    </RadioGroup>
+</RelativeLayout>

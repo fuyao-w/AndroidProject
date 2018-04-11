@@ -1,0 +1,84 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+
+    android:background="#000"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+   <TableLayout
+       android:orientation="vertical"
+       android:layout_width="match_parent"
+       android:layout_height="wrap_content">
+       <TableRow
+           android:layout_marginLeft="10dp"
+           android:weightSum="1"
+           android:orientation="horizontal">
+           <TextView
+               android:textColor="#1296db"
+               android:text="王扶摇"
+               android:textSize="20dp"
+               android:layout_width="0dp"
+               android:layout_weight="0.65"
+               android:layout_height="wrap_content"
+               android:id="@+id/detailedname"/>
+           <TextView
+               android:textColor="#1296db"
+               android:text="1511651117"
+               android:textSize="20dp"
+               android:layout_width="0dp"
+               android:layout_weight="0.35"
+               android:layout_height="wrap_content"
+               android:id="@+id/detailednumber"/>
+       </TableRow>
+       <TableRow
+           android:layout_marginTop="5dp"
+           android:weightSum="1"
+           android:layout_marginLeft="10dp"
+           android:orientation="horizontal">
+           <TextView
+               android:textColor="#1296db"
+               android:text="软件1507"
+               android:textSize="20dp"
+               android:layout_width="0dp"
+               android:layout_weight="0.65"
+               android:layout_height="wrap_content"
+               android:id="@+id/detailedclass"/>
+           <TextView
+               android:textColor="#1296db"
+               android:text="2017-7-6"
+               android:textSize="20dp"
+               android:layout_width="0dp"
+               android:layout_weight="0.35"
+
+               android:layout_height="wrap_content"
+               android:id="@+id/detailedtime"/>
+       </TableRow>
+
+   </TableLayout>
+    <TextView
+        android:layout_marginTop="2dp"
+        android:layout_marginBottom="2dp"
+        android:gravity="center_horizontal"
+         android:id="@+id/textView2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:text="记录"
+        android:textColor="#1296db"
+        android:textSize="20dp" />
+    <View
+        android:background="#1296db"
+    android:layout_width="match_parent"
+    android:layout_height="1dp"/>
+    <ScrollView
+        android:layout_marginLeft="10dp"
+        android:layout_width="match_parent"
+        android:layout_height="200dp">
+        <TextView
+            android:id="@+id/detailed"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:textColor="#1296db"/>
+    </ScrollView>
+
+</LinearLayout>

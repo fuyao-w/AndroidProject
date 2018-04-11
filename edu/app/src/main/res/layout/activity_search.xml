@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/relative"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.example.edu.DiscoverFragment"
+android:background="@mipmap/tjpu_bgk"
+    >
+
+    <android.support.v7.widget.Toolbar
+        android:id="@+id/toolbar1"
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+
+        android:background="#1296db"
+        app:navigationIcon="@mipmap/drawer">
+
+        <SearchView
+            android:id="@+id/searchview"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:inputType="text"
+
+            android:queryHint="学号或姓名"
+            android:searchIcon="@mipmap/search_but_nor">
+
+        </SearchView>
+
+
+    </android.support.v7.widget.Toolbar>
+
+
+    <com.aspsine.swipetoloadlayout.SwipeToLoadLayout
+        android:visibility="invisible"
+
+        android:layout_width="match_parent"
+        android:layout_below="@id/toolbar1"
+        android:layout_height="wrap_content"
+        android:id="@+id/swipeToLoadLayout">
+
+
+    <include
+        android:id="@id/swipe_refresh_header"
+        layout="@layout/header" />
+    <ListView
+        android:scrollbars="none"
+        android:id="@+id/swipe_target"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+
+        android:divider="#1296db"
+        android:dividerHeight="1dp" />
+        <include
+            android:id="@id/swipe_load_more_footer"
+            layout="@layout/footer" />
+
+    </com.aspsine.swipetoloadlayout.SwipeToLoadLayout>
+
+</RelativeLayout>
+

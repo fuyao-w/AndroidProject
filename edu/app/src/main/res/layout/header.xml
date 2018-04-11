@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+    <com.example.edu.headers.HeaderView
+        xmlns:android="http://schemas.android.com/apk/res/android"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+    android:orientation="horizontal">
+    <LinearLayout
+        android:visibility="gone"
+        android:id="@+id/ping"
+        android:gravity="center"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+        <com.example.edu.headers.CircularProgress
+            android:id="@+id/headpro"
+            android:layout_gravity="center_horizontal"
+            android:layout_width="20dp"
+            android:layout_height="20dp"/>
+
+        <TextView
+            android:id="@+id/headtext"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="正在刷新..." />
+    </LinearLayout>
+    <LinearLayout
+        android:id="@+id/down"
+        android:gravity="center"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+      <ImageView
+          android:layout_width="wrap_content"
+          android:layout_height="match_parent"
+          android:src="@mipmap/download"/>
+
+        <TextView
+            android:id="@+id/headtext"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="下拉刷新..." />
+    </LinearLayout>
+    <LinearLayout
+        android:visibility="gone"
+        android:id="@+id/up"
+        android:gravity="center"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:src="@mipmap/loadcomplie"/>
+
+        <TextView
+            android:id="@+id/headtext"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="刷新完成..." />
+    </LinearLayout>
+    </com.example.edu.headers.HeaderView>
+

@@ -1,0 +1,129 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent">
+    <TableLayout
+        xmlns:android="http://schemas.android.com/apk/res/android"
+        android:id="@+id/tablelayout"
+        android:layout_marginRight="5dp"
+        android:layout_marginLeft="5dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        >
+
+
+        <TableRow
+            android:layout_width="match_parent"
+            android:layout_height="30dp"
+            android:background="@drawable/logbck"
+            >
+
+            <TextView
+
+                android:layout_marginLeft="5dp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="姓 名:"
+                android:textSize="20dp" />
+
+            <EditText
+                android:text=""
+
+                android:id="@+id/regusername"
+                android:layout_width="320dp"
+                android:layout_height="wrap_content"
+                android:background="@null"
+                android:digits="0123456789qwertyuioplkjhgfdsazxcvbnm"
+                android:hint=""
+                android:maxLength="10"
+                android:textSize="20dp" />
+        </TableRow>
+
+        <TableRow
+            android:background="@drawable/logbck"
+            android:layout_marginTop="10dp"
+
+            android:layout_height="30dp"
+            android:layout_width="match_parent">
+            <TextView
+
+                android:layout_marginLeft="5dp"
+                android:textSize="20dp"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:text="学 号:"/>
+
+            <EditText
+                android:id="@+id/regpassword"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@null"
+                android:digits="0123456789qwertyuioplkjhgfdsazxcvbnm"
+                android:hint="请输入密码（最长16位）"
+                android:inputType="textPassword"
+                android:maxLength="16"
+                android:text=""
+                android:textSize="20dp" />
+        </TableRow>
+
+        <TableRow
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginTop="10dp"
+            android:background="@drawable/logbck"
+            >
+
+            <TextView
+
+                android:layout_marginLeft="5dp"
+
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:text="班级:"
+                android:textSize="20dp" />
+
+            <EditText
+                android:id="@+id/regpassword2"
+                android:text=""
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:background="@null"
+                android:digits="0123456789qwertyuioplkjhgfdsazxcvbnm"
+                android:hint=""
+                android:inputType="textPassword"
+                android:maxLength="16"
+                android:textSize="20dp" />
+        </TableRow>
+        <TableRow
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginTop="10dp"
+            android:background="@drawable/logbck"
+            >
+
+            <TextView
+
+                android:layout_marginLeft="5dp"
+
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:text="记录:"
+                android:textSize="20dp" />
+
+            <EditText
+                android:id="@+id/regname"
+                android:background="@drawable/logbck"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:textSize="20dp"
+                android:maxLength="5"
+                />
+        </TableRow>
+
+
+    </TableLayout>
+
+
+
+
+</RelativeLayout>
